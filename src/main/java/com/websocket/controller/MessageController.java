@@ -18,7 +18,6 @@ public class MessageController {
 
         try{
             Thread.sleep(500);
-            System.out.println("=================================================================================================="+message);
         }
         catch (InterruptedException e){
             //message directly nhi jaaega pehle thread sleep hogi then message jaaega isliye try catch hai
