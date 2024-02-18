@@ -4,15 +4,37 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="/style.css">
+
 
     <script src="/webjars/jquery/jquery.min.js"></script>
     <script src="/webjars/sockjs-client/sockjs.min.js"></script>
     <script src="/webjars/stomp-websocket/stomp.min.js"></script>
     <script src="/scipt.js"></script>
+
+    <style>
+    body{
+  background:#161313;
+}
+
+
+        #name-form{
+            height:100vh;
+           }
+.button-custom{
+ background-color: yellow;
+ color: black;
+ border-color: black;
+}
+
+.button-custom:hover{
+  background-color: black;
+  color: yellow;
+  border-color: black;
+ }
+    </style>
 </head>
 <body>
- <h1 style="color:yellow;">Chat Room</h1>
+ <h1 style="color:#78c80e;">Chat Room</h1>
 
  <div id="name-form" class="home d-flex align-items-center" style="background-color:#1c1717;">
      <div class="container-fluid">
@@ -22,8 +44,9 @@
 
                      <input type="text" placeholder="Enter Your Name" id="name-value" autofocus class="form-control">
 
-                     <div class="input-group-append">
-                         <button class="btn custom" id="login" style="background-color:yellow;color:black;">Submit</button>
+                     <div class="container text-center">
+                         <br>
+                         <button class="btn btn-primary button-custom" type="submit" id="login">Submit</button>
                      </div>
 
                  </div>
@@ -57,7 +80,7 @@
                         </div>
 
                         <div class="table-responsive mt-3">
-                            <table id="message-container-table" style="background:red;color:white;">
+                            <table id="message-container-table">
 
                             </table>
                         </div>

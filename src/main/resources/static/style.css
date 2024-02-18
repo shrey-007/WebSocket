@@ -5,7 +5,12 @@ body{
 #name-form{
   height:100vh;
 }
-.custom:hover{
+.customBtn{
+   padding:1%;
+   background-color:yellow;
+   color:black;
+}
+.customBtn:hover{
  background-color:black;
  color:yellow;
 }
