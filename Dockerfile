@@ -5,7 +5,7 @@ FROM openjdk
 WORKDIR /app
 
 # Copy the Spring Boot application's JAR file to the container
-COPY target/WebSocket-0.0.1-SNAPSHOT.jar /app/app.jar
+COPY WebSocket-0.0.1-SNAPSHOT.jar /app/app.jar
 
 # Expose port 8080 to the outside world
 EXPOSE 8080
